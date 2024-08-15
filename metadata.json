@@ -1,0 +1,7 @@
+{
+    "name": "yilmaz",
+    "creator": "Yilmaz",
+    "description": "Een chest opener module. /togglechest",
+    "version": "1.0.0",
+    "entry": "index.js"
+  }
