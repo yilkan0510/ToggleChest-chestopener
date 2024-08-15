@@ -3,15 +3,15 @@ register("tick", () => {
   unregister(this);
 });
 
-
 let togglechest = false;
 
 register("command", () => {
   togglechest = !togglechest;
 
   if (togglechest) {
-    ChatLib.chat("togglechest is now ON");
+    ChatLib.chat("§6§l[ToggleChest] §r§aAuto-chest opening is now ON");
   } else {
-    ChatLib.chat("togglechest is now OFF");
+    ChatLib.chat("§6§l[ToggleChest] §r§cAuto-chest opening is now OFF");
   }
 }).setName("togglechest");
+
