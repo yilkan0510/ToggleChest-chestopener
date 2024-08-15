@@ -15,3 +15,19 @@ register("command", () => {
   }
 }).setName("togglechest");
 
+register("tick", () => {
+  if (togglechest) {
+    let block = Player.lookingAt();
+
+    if (block && block.type) {
+      // Get the block ID
+      let blockID = block.type.getID();
+
+      // Check if the block ID matches the chest ID
+      if (blockID === 54) {  // 54 is the ID for a regular chest
+        ChatLib.chat("opening chest");
+
+      }
+    }
+  }
+});
